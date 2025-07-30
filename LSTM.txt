@@ -1,0 +1,18 @@
+What is LSTM?
+-type of RNN that can capture log-term dependence in sequential data
+What is RNN?
+-Type of Neural network that can work on time series like data they are able to capture short-term dependencides in sequential datas but struggle with capturing long term dependencies
+
+IN normal RNN we have vanishing gradient problem that is gradient of loss fuction goes on to become too small that results in non-usage of long-term memory and makes RNN to tram from  distant info that might be crucial for future prediction
+
+The technique computes the gradient (or slope) of the loss function with respect to the network's weights and uses the gradient to update the weights for better performance. In RNNs, this process is called backpropagation through time (BPTT) 
+
+WHy do gradient become too small --
+During training, weights are updated based on gradients—specifically, the gradient of the loss function with respect to each weight. In deep neural networks and RNNs using activation functions like sigmoid or tanh, the gradients can become very small (close to zero) as they are multiplied over many layers or time steps
+
+Weights are the adjustable connections in a neural network that “learn” from the data. In the vanishing gradient problem, updates to the weights become so small (because gradients shrink during backpropagation) that the weights hardly change—leading to poor learning, especially for long-term dependencies in deep or recurrent networks
+
+
+
+TO solve this we have LSTM models that have gating mechanism to prevent this problem
+namely-input gate ,output gate and forget gate

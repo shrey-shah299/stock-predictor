@@ -1,0 +1,8 @@
+--present in sklearn.metrics
+1.Presicion score- This is useful in dealing with classification type problems not regression
+
+
+Metric	Highest (Best) Value	    Meaning	                                Other Info
+MSE	No fixed maximum	    Lower is better; measures squared error	Can be infinity
+MAE	No fixed maximum	    Lower is better; measures absolute error	Can be infinity
+R²	1.0	                    Higher is better; perfect fit                Can be 0 or negative if bad
